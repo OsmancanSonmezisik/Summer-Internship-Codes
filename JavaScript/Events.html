@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events</title>
+</head>
+<body>
+
+<p id="time_space" style="background-color:teal;color:white;width:300px;height:75px;text-align:center;line-height:2.4 ;"></p>    
+<button onclick="document.getElementById('time_space').innerHTML = Date()">
+  Click to See the Time
+</button>
+
+<br><br>
+<button onclick="this.innerHTML = Date()">Click to see the Time</button>
+    
+</body>
+</html>

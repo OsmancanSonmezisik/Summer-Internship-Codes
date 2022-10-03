@@ -1,0 +1,118 @@
+body {height: 3000px;}
+
+div.static {
+  position: static;
+  width: 300px;
+  border: 2px solid teal;
+  text-align: center;
+  text-decoration-line: underline overline;
+  text-decoration-style:double;
+}
+
+div.relative {
+  position: relative;
+  left: 1200px;  
+  top: 100px;
+  width: 300px;
+  border: 2px solid dodgerblue;
+  text-align: center;  
+  text-shadow: 2px 2px 5px dodgerblue, 0px 0px 5px greenyellow, 0px 0px 25px darkblue;
+}
+
+
+div.fixed { 
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  border: 2px solid tomato;
+  background-color: tomato;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+
+}
+
+div.relative2 {
+  position: relative;
+  border: 5px solid teal;
+  width: 500px;
+  height: 200px;
+  text-align: center;
+}
+
+div.absolute {
+  position: absolute;
+  top: 125px;        
+  left:395px;
+  height: fit-content;
+  width: 100px;
+  border: 3px solid tomato;
+  text-align: center;
+  color: teal;
+}
+
+div.sticky {
+  position: sticky;
+  top: 0px;
+  border: 3px solid royalblue;
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  background-color: royalblue;
+  color:white;   
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+img.img1 {
+    width: 100%;
+    height: auto;
+    /* opacity: 0.7; */
+}
+
+div.top_left {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: white;
+  font-weight: bolder;
+}
+
+div.top_right {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: white;
+    font-weight: bolder;
+  }
+
+  div.bottom_left {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: white;
+    font-weight: bolder;
+  }
+
+  div.bottom_right {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    color: white;
+    font-weight: bolder;
+  }
+
+  div.center {
+    position: absolute;
+    top:50%;
+    width: 100%;
+    text-align:center;
+    color: white;
+    font-weight: bolder;     
+  }
+
+
+

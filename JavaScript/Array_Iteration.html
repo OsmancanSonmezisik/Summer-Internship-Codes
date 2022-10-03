@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Iteration</title>
+</head>
+<body>
+
+<p id="p1"></p> 
+<p id="p2"></p>    
+
+
+<script>
+
+const numbers = [1,2,3,4,5,6];
+let txt = "";
+numbers.forEach(iterator);
+document.getElementById("p1").innerHTML = txt;
+
+function iterator(value,index,array) {
+  txt += value + "<br>";
+}
+
+let x = numbers.every(myFunction);
+document.getElementById("p2").innerHTML = x;
+function myFunction(value,index,array) {
+  return value > 0;
+}
+</script>
+
+    
+</body>
+</html>

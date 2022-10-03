@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Arrays</title>
+</head>
+<body>
+<h1>JavaScript Arrays</h1>
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<p id="p4"></p>
+<p id="p5"></p> <br><br>
+<p id="p6"></p>
+<p id="p7"></p>
+<p id="p8"></p>
+<p id="p9"></p>
+<p id="p10"></p>
+<p id="p11"></p>
+<p id="p12"></p>
+<p id="p13"></p>
+<p id="p14"></p>
+<p id="p15"></p>
+<script>
+
+const colors = ["orange","red","green","blue","black"];
+for(let i=0;i<colors.length;i++) {
+    document.getElementById(`p${i+1}`).innerHTML = `${i+1}) ` + colors[i];
+    document.getElementById(`p${i+1}`).style.color = colors[i];
+}
+
+const fruits = ["Banana","Watermelon","Peach","Apple"];
+document.getElementById("p6").innerHTML = fruits.join(" | "); //toString can also be used but join provides a seperator.
+document.getElementById("p7").innerHTML = "Deleted item: " +  fruits.pop();
+document.getElementById("p8").innerHTML = "New item inserted.Current array length is: " + fruits.push("Pear");
+fruits.shift();
+fruits.unshift("Pineapple");
+document.getElementById("p9").innerHTML = "Fruits: " + fruits.join(", ");
+
+const vegetables = ["Onion","Carrot","Pepper","Cabbage"];
+document.getElementById("p10").innerHTML = "Vegetables: " + vegetables.join(", ");
+
+const flowers = ["Rose","Daisy","Lavender","Dandelion"];
+document.getElementById("p11").innerHTML = "Flowers: " + flowers.join(", ");
+
+const plants = fruits.concat(vegetables,flowers,"...");
+document.getElementById("p12").innerHTML = "Plants: " + plants.join(", ");
+
+document.getElementById("p13").innerHTML = "Deleted items: " + 
+plants.splice(0,3,"Lemon","Kiwi","Apricot"); //splice(position,deletion number) 
+document.getElementById("p14").innerHTML = "Plants: " + plants.join(", ");
+
+const plants2 = plants.slice(8,12);
+document.getElementById("p15").innerHTML = "Sliced array: " + plants2.join(", ");
+</script>
+    
+</body>
+</html>

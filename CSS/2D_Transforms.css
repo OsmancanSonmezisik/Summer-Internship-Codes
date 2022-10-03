@@ -1,0 +1,36 @@
+.div {
+  width: 100px;
+  height: 100px;
+  background-color: tomato; 
+  color: white;
+  text-align: center;      
+}
+
+
+.translate:hover {
+  transform: translate(50px,50px);
+}
+
+.rotate {
+    margin-left: 10px;
+    transform: rotate(20deg);  
+}
+  
+.rotate:hover {
+  transform: rotate(0deg);   
+}
+
+.scale:hover {
+  margin: 50px;  
+  transform: scale(2,2)    
+}
+
+.skew:hover {
+  margin: 50px;  
+  transform: skew(-20deg,40deg);    
+}
+
+.matrix:hover {
+  margin-left: 500px;  
+  transform: matrix(2,0,0,2,50,-500); /* matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */   
+}

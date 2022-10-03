@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JavaScript Array Sorting</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<p id="p4"></p>
+<p id="p5"></p>
+<p id="p6"></p>
+<p id="p7"></p>
+<p id="p8"></p>
+<p id="p9"></p>
+<p id="p10"></p>
+<p id="11"></p>
+<p id="p12"></p>
+<p id="p13"></p>
+<p id="p14"></p>
+
+<script>
+
+const colors = ["white","black","orange","purple","pink","teal"];
+document.getElementById("p1").innerHTML = "Unsorted array: " + colors.join(", ");
+colors.sort().reverse();
+document.getElementById("p2").innerHTML = "Alphabetically sorted array z to a: " + colors.join(", ");
+
+const numbers = [1000,100,10,0,5,-10,50,300,400,2,10];
+document.getElementById("p3").innerHTML = "Unsorted: " + numbers.join(" , ");    
+numbers.sort(function(a,b){return a -b});
+document.getElementById("p4").innerHTML = "Sorted: " + numbers.join(" , ");
+document.getElementById("p5").innerHTML = "Max Value: " + numbers[numbers.length-1];
+document.getElementById("p6").innerHTML = "Min Value: " + numbers[0];
+document.getElementById("p7").innerText = "Max Value:" + Math.max.apply(null,[1000,100,10,0,5,-10,50,300,400,2,10]);
+
+function maxFinder(arr) {
+  let len = arr.length;
+  let max = -Infinity;
+  while (len--) {
+    if (arr[len] > max) {
+      max = arr[len];
+    }
+  }
+  return max;    
+}
+
+document.getElementById("p8").innerText = "Max Value:" + maxFinder(numbers);
+
+
+</script>
+
+
+    
+</body>
+</html>

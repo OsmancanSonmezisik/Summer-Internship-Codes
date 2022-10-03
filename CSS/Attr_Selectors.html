@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Attribute Selectors</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+a[target] {
+    background-color: yellow;
+}
+a[target="_top"] {
+    background-color: tomato;
+}
+
+h2[title~="heading2"] {
+    border: 5px solid red;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+}
+
+h3[title|="heading"]{
+  background-color: aqua;
+}
+</style>
+
+</head>
+<body>
+
+<a href="#" target="_blank">Link1</a>
+<a href="#" target="_top">Link2</a>
+
+<h2 title="heading1">Heading 1</h2>
+<h2 title="heading2">Heading 2</h2>
+<h2 title="this is heading2">Heading 2</h2>
+
+<h3 title="heading">Heading 3</h3>
+<h3 title="heading-1">Heading 4</h3>
+<h3 title="this is a heading">Heading 5 </h2>
+
+
+
+
+
+
+    
+</body>
+</html>

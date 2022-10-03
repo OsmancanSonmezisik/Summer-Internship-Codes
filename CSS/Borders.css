@@ -1,0 +1,39 @@
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+p.bottom_border {border-bottom: solid slateblue;}
+
+p.thin_border{border-width:thin;}
+p.medium_border{border-width:medium;}
+p.thick_border{border-width:thick;}
+
+p.width1{border-width: 10px 20px;} /* top and bottom 10px left and right 20px */
+p.width2{border-width:10px 20px 30px 40px;
+border-color:aqua aquamarine teal tomato}
+
+p.shorthand_method {border: thin solid rgba(255,99,71,0.5);
+border-left: thick solid tomato;
+padding: 15px;
+border-top-right-radius: 15px;
+border-bottom-right-radius: 15px;
+background-color: rgba(128, 128, 128, 0.718);}
+
+p.border_image {
+  border:15px solid transparent;
+  padding:15px;
+  border-image: url(img_forest.jpg) 60 round;
+  text-align: center;
+  background-color: rgba(0, 128, 0, 0.56);
+  background-clip: content-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+      
+}

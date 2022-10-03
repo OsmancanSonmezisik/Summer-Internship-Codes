@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JavaScript Functions</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<p id="p1"></p>    
+<p id="p2"></p>
+<p id="p3"></p>
+<p id="p4"></p>    
+<p id="p5"></p>    
+<p id="p6"></p>    
+
+
+    
+<script>
+
+const person = {
+  fullName: function(age,occupation) {
+    return this.fName + " " + this.lName + "<br>" + "Age: " + age + 
+    "<br>" + "Occupation: " + occupation;  
+  }    
+}
+
+const person1 = {
+ fName: "John",
+ lName: "Doe"   
+}
+
+const person2 = {
+ fName: "Jane",
+ lName: "Doe"   
+}
+
+let fullName = person.fullName.bind(person2);
+document.getElementById("p2").innerHTML = findMean(5,6,7,8,9,234,23,120);
+document.getElementById("p3").innerHTML = findMinimumValue(5,6,7,8,9,-234,23,1,120);
+document.getElementById("p4").innerHTML = person.fullName.call(person1,30,"Computer Engineer");
+document.getElementById("p5").innerHTML = person.fullName.apply(person1,[30,"Computer Engineer"]);
+document.getElementById("p6").innerHTML = fullName(40,"Doctor");
+
+
+(function self_invoked_function() {
+  document.getElementById("p1").innerHTML = "Hello World!";    
+})();
+
+function findMean() {
+  let sum = 0;
+  let input_number = arguments.length;
+  for(let i=0; i<input_number; i++) {
+    sum += arguments[i];      
+}
+  return "Mean: " + sum / input_number;     
+}
+
+function findMinimumValue() {
+ let min = Infinity;
+ for (i=0; i<arguments.length; i++) {
+   if(arguments[i] < min) {
+     min = arguments[i];  
+   }
+ }
+ return min;     
+}
+
+
+</script>
+
+</body>
+</html>

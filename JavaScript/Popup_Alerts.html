@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Popup Alerts</title>
+</head>
+<body>
+<br>
+<button onclick="confirmFunction()">Press here</button>
+<p id="p1"></p>
+<button onclick="promptFunction()">Enter your name</button>
+<p id="p2"></p>
+
+<script>
+
+alert("Welcome",1000);
+
+function confirmFunction() {
+ let txt = "";
+ if (confirm("Press a button")) {
+   txt = "You have pressed OK";   
+ } else {
+    txt = "You have pressed Cancel";
+ }
+ document.getElementById("p1").innerHTML = txt;
+}
+
+function promptFunction() {
+ let fname = prompt("Enter your first name: ");
+ if (fname == null || fname == "") {
+   fname = "You didn't enter any name.";  
+ } 
+ document.getElementById("p2").innerHTML = fname;    
+}
+
+
+</script>
+
+    
+</body>
+</html>

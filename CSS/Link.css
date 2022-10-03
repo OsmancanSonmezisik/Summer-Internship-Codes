@@ -1,0 +1,49 @@
+/* Order is important. 
+a:hover MUST come after a:link and a:visited
+a:active MUST come after a:hover
+*/
+
+a.button1:link, a.button1:visited {
+  background-color: tomato;
+  color: white;
+  text-decoration: none;
+  padding: 20px 20px;
+  text-align: center;
+  display: inline-block;     
+}
+
+a.button1:hover, a.button1:active {
+  background-color: red;  
+}
+
+a.linkBox:link, a.linkBox:visited {
+    text-align: center;
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+    border: 2px solid teal;
+    border-radius: 10px;
+    color: teal;
+}
+
+a.linkBox:hover{
+    background-color: teal;
+    color: white;
+    border-color: white;
+    cursor: pointer;
+
+}
+
+a.linkBox:active {
+    
+    cursor: progress;
+
+}
+  
+
+
+
+
+
+

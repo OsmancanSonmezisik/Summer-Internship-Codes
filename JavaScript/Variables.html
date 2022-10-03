@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Variables</title>
+</head>
+<body>
+    
+<h1>JavaScript Variables</h1>
+
+<p id="result"></p>
+<p id="result2"></p>
+<p id="text1"></p>
+<p id="stringConcatenation1"></p>
+<p id="stringConcatenation2"></p>
+
+<script>
+// var Keyword
+var x = 18;
+var y = 7;
+var z = x + y;
+document.getElementById("result").innerHTML = 
+"18 + 7 = " + z;
+
+//let Keyword
+let a = 24;
+let b = 8;
+let c = x / y;
+document.getElementById("result2").innerHTML =
+"24 / 8 = " + c;
+
+let firstName= "John";
+let lastName= "Doe";
+let age = 30;
+let sentence = firstName + " " + lastName + " is " + age + " years old.";
+document.getElementById("text1").innerHTML = sentence;
+
+let string1;
+document.getElementById("stringConcatenation1").innerHTML = 
+string1 = "5" + 5 + 5;
+
+let string2;
+document.getElementById("stringConcatenation2").innerHTML = 
+string1 = 5 + 5 + "5";
+
+</script>
+</body>
+</html>

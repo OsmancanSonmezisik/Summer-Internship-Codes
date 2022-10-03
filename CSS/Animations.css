@@ -1,0 +1,61 @@
+.animation1 {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  background-image: linear-gradient(to left top,coral,teal);
+  animation-name: animation_1;
+  animation-duration: 20s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-fill-mode: both;   
+}
+
+div.animation1 h2 {
+  color: white;
+  text-align: center;
+  
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  right: 25%;
+  bottom: 25%;
+}
+
+@keyframes animation_1 {
+  0% {
+    background-image:linear-gradient(to left top,coral,teal);
+    left: 0px; 
+    top:0px; 
+    transform:scale(1,1);
+}
+
+  25% {
+    background-image:linear-gradient(to left top,violet,coral); 
+    left: 1390px; 
+    top: 620px; 
+    transform:scale(0.75,0.75) rotate(360deg);
+}
+
+  50% {
+    background-image:linear-gradient(to left top,dodgerblue,violet); 
+    left: 0px; 
+    top:620px; 
+    transform:scale(0.50,0.50);
+}
+
+  75% {
+    background-image: linear-gradient(to left top,violet,teal); 
+    left:1390px; 
+    top: 0px; 
+    transform: scale(0.25,0.25) rotate(360deg);
+}
+ 100% {
+    background-image: linear-gradient(to left top,teal,coral); 
+    left:0px; 
+    top:0px;
+    transform: scale(1,1);
+}
+      
+}

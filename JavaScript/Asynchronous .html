@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Asynchronous </title>
+</head>
+<body>
+
+<p id="p1"></p>
+<p id="p2"></p>
+
+<script>
+
+function displayer() {
+  document.getElementById("p1").innerHTML = "Hello World!";
+}
+setTimeout(displayer,3000);
+
+function digitalClock() {
+  let time = new Date();
+  document.getElementById("p2").innerHTML = 
+  time.getHours() + ":" +
+  time.getMinutes() + ":" + 
+  time.getSeconds();    
+}
+setInterval(digitalClock,1000);
+
+</script>
+    
+</body>
+</html>

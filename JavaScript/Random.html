@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Math Random</title>
+</head>
+<body>
+<p id="id_1"></p>
+<button onclick="random1()">Random</button>
+
+<p id="id_2"></p>
+<button onclick="random2(0,10)">Random Generator</button>
+<script>
+  
+  function random1() {
+    document.getElementById("id_1").innerHTML = Math.floor(Math.random() * 100) + 1; //Up to 100(excluded)
+  }
+  
+  function random2(min,max) {
+    document.getElementById("id_2").innerHTML = Math.floor(Math.random() * (max - min + 1)) + min;  //both included 
+  }
+
+</script>    
+
+</body>
+</html>

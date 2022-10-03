@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Strings</title>
+</head>
+<body>
+    
+<p id="p1">I am learning JavaScript and JavaScript.</p>
+<button onclick="myFunction()">Change String</button>
+
+<p id="p2"></p>
+
+
+<script>
+
+function myFunction() {
+  let txt1 = "I am learning JavaScript and JavaScript.";
+  //let x = txt1.slice(14);
+  //let x = tx1.replace("JavaScript","CSS") Only first appeared will be changed.
+  let x = txt1.replace(/JavaScript/g,"CSS").toUpperCase();
+  document.getElementById("p1").innerHTML = x;      
+}
+
+let hello = "Hello";
+let world = "World";
+document.getElementById("p2").innerHTML = `${hello} ${world}!` ;
+
+</script>
+
+
+</body>
+</html>

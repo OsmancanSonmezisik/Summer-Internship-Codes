@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Object Constructors</title>
+</head>
+<body>
+
+<p id="p1"></p>    
+
+<script>
+
+function Student(fName,lName,number,grade) {
+  this.fName = fName;
+  this.lName = lName;
+  this.number = number;
+  this.grade = grade;
+  this.fullName = function() {
+    return this.fName + " " + this.lName;
+  }
+}
+
+Student.prototype.nationality = "Turkish";
+Student.prototype.getNumber = function() {
+  return this.number;    
+}
+
+const student1 = new Student("John","Doe",123,4);
+document.getElementById("p1").innerHTML = student1.fullName();
+
+
+
+
+
+</script>
+
+</body>
+</html>

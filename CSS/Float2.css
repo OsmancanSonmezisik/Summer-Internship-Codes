@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;    
+  }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;    
+}
+
+.container {
+  float:left;
+  width:33.33%;
+  padding:5px;
+}
+
+div.container img{
+  opacity: 0.6;
+}
+
+div.container img:hover {
+  opacity: 1.0;
+}
+
+figcaption {
+  text-align: center;    
+}
+
+
+

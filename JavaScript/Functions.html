@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Functions</title>
+</head>
+<body>
+
+<h1>JavaScript Functions</h1>    
+<p id="function_1"></p>
+<p id="function_2"></p>
+
+<script>
+
+function concatenate(firstName,lastName,birthYear) {
+  let currentYear = new Date().getFullYear();
+  let age = currentYear - birthYear;
+  document.getElementById("function_1").innerHTML =
+  "My name is " + firstName + " " + lastName + " and I am " + age + " years old."
+}
+
+function power(num1,num2) {
+  return num1 ** num2;
+}
+
+function alertDate(){
+  let day = new Date().getDay();
+  let month = new Date().getMonth() + 1;
+  let year = new Date().getFullYear();
+  let fullDate = day + "/" + month + "/" + year;  
+  return alert(fullDate);
+}
+
+concatenate("John","Doe",1995);
+document.getElementById("function_2").innerHTML = power(5,3);
+alertDate();
+</script>
+    
+</body>
+</html>

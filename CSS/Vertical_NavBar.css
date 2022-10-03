@@ -1,0 +1,36 @@
+
+ul {
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+  width: 200px;
+  background-color:rgba(128,128,128,0.6); 
+}
+
+ul{
+  border: 1px solid;    
+}
+
+li {
+  border-bottom: 1px solid;  
+}
+
+li:last-child{border-bottom: none;}
+
+li a {
+  text-decoration:none;
+  display: block;
+  padding: 8px 16px;
+  color:red;    
+}
+
+li a.active {
+  background-color: coral;
+  color: white;
+  }
+
+li a:hover:not(.active)  {
+  background-color: rgb(85, 85, 85);
+}
+
+

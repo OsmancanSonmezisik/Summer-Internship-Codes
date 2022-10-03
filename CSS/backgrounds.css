@@ -1,0 +1,42 @@
+html {
+  background: url(img_mountains.jpg) no-repeat center fixed;
+  background-size: cover;
+  height: 10000px;  
+}
+
+body {
+  background: url(img_mountains.jpg) no-repeat center fixed;
+  background-size: cover;
+  height: 10000px;  
+}
+
+#css_backgrounds {
+  text-align: center;    
+}
+
+div {
+    height: 500px;  
+    background-image: url(planet.png), url(img_background2.png);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    background-size: 150px, contain;
+    background-origin:padding-box;
+    padding:10px;
+    }
+
+  /*
+    body {
+   ---
+   background-color: rgba(127, 255, 212,0.5);
+   opacity:0.5; #It also affets the child elements to avoid that use rgba. 
+   ---
+  min-height: 1000px;
+  background-image: url(img_car.jpg);
+  background-repeat: repeat-x;
+  background-position: center;  
+  background-attachment: fixed;  -- Backgrounds image is fixed.It wont scroll with the rest of the page.-- 
+  background-size: 100% 100%;  --The background will be stretched.If cover is used background keeps its original proportions.--
+}
+*/
+
+

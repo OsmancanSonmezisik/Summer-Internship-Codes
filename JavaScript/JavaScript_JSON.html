@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript JSON</title>
+</head>
+<body>
+
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+
+<script>
+//JavaScript Object to JSON
+const person1 = {
+  fname: "John",
+  lname: "Doe"                            
+}
+const person2 = {
+  fname: "Jane",
+  lname: "Doe"                            
+}
+const objArr = [person1,person2];
+document.getElementById("p1").innerHTML = JSON.stringify(objArr);
+
+//JSON to JavaScript Object
+let json_object1 = '{"name":"John", "surname":"Doe", "city":"New York", "birth":"2022-08-12"}';
+
+const obj1 = JSON.parse(json_object1,function(key,value) {
+  if (key == "birth") {
+    return new Date(value);
+  }else {
+    return value;
+  }
+});
+
+let txt = "";
+for (let x in obj1) {
+  txt += obj1[x] + "<br>";
+}
+//obj1.birth = new Date(obj1.birth);
+document.getElementById("p2").innerHTML = txt;
+
+const json_array1 = '["red", "green", "blue"]';
+const arr1 = JSON.parse(json_array1);
+document.getElementById("p3").innerHTML = arr1.join(", ");
+
+</script>
+    
+</body>
+</html>

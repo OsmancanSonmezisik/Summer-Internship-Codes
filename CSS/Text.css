@@ -1,0 +1,30 @@
+/*
+h1 {text-align: center;}
+
+h2 {text-align: right;}
+
+h3 {text-align: left;}*/
+
+p.a {text-align: justify;
+   border: 1px solid black;
+   height: fit-content;
+   width: 200px;
+   padding: 10px;
+}    
+
+p.b {
+   text-indent: 20px;
+   text-align-last:right;}
+
+p.c {text-align-last:center;}
+
+p.d {text-align-last:justify;
+     direction: rtl;
+     unicode-bidi:bidi-override;
+}
+
+img.a {vertical-align: baseline;}
+img.b {vertical-align: text-top;}
+img.c {vertical-align: text-bottom;}
+img.d {vertical-align: sub;}
+img.e {vertical-align: super;}

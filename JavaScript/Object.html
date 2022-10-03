@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Objects</title>
+</head>
+<body>
+
+<h1>JavaScript Objects</h1>    
+<div style="background-color:grey; width:fit-content">
+  <h3>Student #1</h3>  
+  <p id="p1"></p>
+  <p id="p2"></p>
+  <p id="p3"></p>
+  <p id="p6"></p>
+  <p id="p4"></p>
+  <p id="p5"></p>    
+</div>
+
+<script>
+
+const Student = {
+  firstName: "John",
+  lastName: "Doe",
+  number: 123456,
+  registrationDate: 2016,
+  department: "Computer Engineering",
+  courses: ["Algoritms ","Database ","Programming "],
+  currentGrade: function() {
+    let currentYear = new Date().getFullYear();
+    if(currentYear - this.registrationDate >4) {
+      return 4;    
+    }else {
+       return currentYear - this.registrationDate;     
+    }
+  }
+};
+
+document.getElementById("p1").innerHTML = "First Name: " + Student.firstName;
+document.getElementById("p2").innerHTML = "Last Name: " + Student.lastName;
+document.getElementById("p3").innerHTML = "Number: " + Student.number;
+document.getElementById("p6").innerHTML = "Grade: " + Student.currentGrade();
+document.getElementById("p4").innerHTML = "Department: " + Student.department;
+document.getElementById("p5").innerHTML = "Courses: " + Student.courses;
+
+</script>
+
+</body>
+</html>

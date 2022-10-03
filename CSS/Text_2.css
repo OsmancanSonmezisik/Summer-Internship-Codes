@@ -1,0 +1,37 @@
+h1 { 
+  text-decoration-line: underline;
+  text-decoration-style:dotted;
+  text-decoration-color:tomato;
+  text-decoration-thickness:5px;    
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px red;    
+}
+
+h2 { 
+   /* text-decoration-line:line-through;
+    text-decoration-color:red;*/
+    text-transform:capitalize ;
+    text-shadow: 0px 0px 3px green, 0px 0px 5px blue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3 { 
+    text-decoration-line:overline;
+    text-decoration-color:teal;
+    text-decoration-style:dashed;
+    font-family:"Lucida Console", "Courier New", monospace ;        
+}
+
+h4 {
+    text-decoration-line: underline;
+    text-decoration-style:wavy;
+    text-decoration-color:dodgerblue;
+}
+
+h5 {
+    text-decoration-line: overline underline;
+    text-decoration-style:double;
+    text-decoration-color:seagreen;
+  }
+
+h6 {text-decoration:overline underline seagreen dashed 2px;}

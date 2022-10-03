@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JavaScript Objects</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<p id="p1"></p>    
+    
+<script>
+const person = {
+  firstName: "John", 
+  lastName: "Doe",
+  lectures: {
+    lecture1: "Programming",
+    lecture2: "Algoritms",
+    lecture3: "Database"  
+  },
+  counter : 0
+};
+
+Object.defineProperty(person,"reset", {
+  get : function() {this.counter = 0;}
+});
+
+Object.defineProperty(person,"increment", {
+  get : function() {this.counter++;}
+});
+Object.defineProperty(person,"decrement", {
+  get : function() {this.counter--;}
+});
+
+Object.defineProperty(person,"add", {
+  set : function(value) {this.counter += value;}
+});
+
+Object.defineProperty(person,"subtract", {
+  set : function(value) {this.counter -= value;}
+});
+
+/*
+person.age = 20;
+delete person.age;
+
+person.fullName = function() {
+  return this.firstName + " " + this.lastName.toUpperCase().toUpperCase();    
+}
+
+let txt = "";
+let txt2 = "";
+let txt3 = "";
+let i = 1;
+for (let x in person) { //method 1
+  txt += person[x] + " "; 
+  txt2 += person.lectures[`lecture${i}`] + " ";
+  i++;      
+}
+txt3 = txt + "<br>" + txt2;
+document.getElementById("p1").innerHTML = txt3;
+*/
+/*
+const myArray = Object.values(person);//method 2
+let myString = JSON.stringify(person);//method 3 */
+
+person.add = 5;
+person.decrement;
+person.subtract = 2;
+document.getElementById("p1").innerHTML = person.counter;
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Text Overflow</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+div.class1 {
+  white-space: nowrap;
+  width: 200px;
+  overflow:hidden;
+  border: 1px solid black;    
+}
+
+div.class1:hover {
+  overflow: visible;    
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="class1" style="text-overflow:ellipsis;">
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+</div><br>
+<div class="class1" style="text-overflow:clip;">
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+</div>
+    
+</body>
+</html>

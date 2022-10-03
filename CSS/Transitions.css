@@ -1,0 +1,45 @@
+div.div {
+  background-color: coral;
+  border: 1px solid transparent;
+  height: 50px;
+  width: 220px;
+  border-radius: 20px;
+  position: relative;
+  transition: width 5s, height 5s;   
+  transition-timing-function: ease-out;
+  transition-delay: 0.5s; 
+}
+
+div.div p {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  color: white;
+  font-weight: bold;  
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;    
+}
+
+div.div:hover {
+  width: 100%;
+}
+
+div.radial_gradient {
+  margin: 50px;
+  width: 200px;
+  height: 200px;
+  background-image: repeating-radial-gradient(circle,coral,teal 15%,dodgerblue 20%);
+  border-radius: 50%;
+  transition: transform 10s;
+  transition-timing-function: ease-in;
+}
+
+div.radial_gradient:hover {
+  
+  transform: matrix(2,0,0,2,200,200) rotate(180deg);
+}
+

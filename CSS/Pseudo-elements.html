@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Pseudo-elements</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+::selection{
+  background-color: grey;
+  color: red;    
+}
+
+#paragraph1::first-line {
+  color: royalblue;
+  font-variant: small-caps;
+}
+
+#paragraph1::first-letter {
+  font-size:50px;
+  font-weight: bolder;    
+}
+/*
+#paragraph1::before {
+  content: url(img_forest.jpg);
+}
+*/
+
+</style>
+</head>
+<body>
+
+<h2>Heading 1</h2>    
+<p id="paragraph1">
+   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+   Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.
+    Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. 
+    Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. 
+    Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. 
+    Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+    Cras ac leo purus. Mauris quis diam velit.
+</p>    
+    
+</body>
+</html>
